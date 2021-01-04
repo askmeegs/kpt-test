@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       run: my-nginx
-  replicas: 1
+  replicas: 1 # {"$kpt-set":"replicas"}
   template:
     metadata:
       labels:
